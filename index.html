@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>이시행 | 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- PAGE 1: Intro, Skills, Research -->
+    <div class="page">
+        <div class="profile-header-container"
+            style="display: flex; flex-direction: column; align-items: center; margin-bottom: 3rem;">
+            <div class="profile-header"
+                style="display: flex; align-items: center; gap: 2.5rem; margin-bottom: 1.5rem; text-align: left;">
+                <img src="images/my_picture.png" alt="Profile" class="profile-image"
+                    style="width: 140px; height: 140px; border-radius: 50%; object-fit: cover; box-shadow: 0 15px 30px -5px rgba(0,0,0,0.1); border: 4px solid #ffffff !important;">
+                <div class="profile-text">
+                    <h1 class="name">이시행</h1>
+                    <h2 class="title" style="margin-top:0; margin-bottom:1rem; border:none; padding:0;">"적응이 빠른 개발자"
+                    </h2>
+                    <div class="contact-info" style="justify-content: flex-start; margin-bottom: 0;">
+                        <span><strong>Email</strong>
+                            <div>dltlgos@gmail.com</div>
+                        </span>
+                        <span><strong>GitHub</strong>
+                            <div><a href="https://github.com/sweet-mine">https://github.com/sweet-mine</a></div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p class="intro-text" style="text-align: center;">
+                비즈니스 문제를 해결하고 사용자에게 가치를 전달할 수 있는 탄탄한 소프트웨어를 만드는 것을 목표로 합니다.
+            </p>
+        </div>
+
+        <h2>Technical Skills</h2>
+        <div class="skills-group">
+            <h4>Languages</h4>
+            <div class="skill-list">
+                <span class="skill-badge"><i class="devicon-cplusplus-plain colored"></i> C / C++</span>
+                <span class="skill-badge"><i class="devicon-java-plain colored"></i> Java</span>
+                <span class="skill-badge"><i class="devicon-python-plain" style="color: #3776AB;"></i> Python</span>
+                <span class="skill-badge"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+            </div>
+        </div>
+        <div class="skills-group">
+            <h4>Frameworks & Libraries</h4>
+            <div class="skill-list">
+                <span class="skill-badge"><i class="devicon-spring-original colored"></i> Spring Boot</span>
+                <span class="skill-badge"><i class="devicon-pytorch-original colored"></i> PyTorch</span>
+                <span class="skill-badge"><i class="fa-solid fa-cube" style="color: #4285F4;"></i> Mediapipe</span>
+                <span class="skill-badge"><i class="devicon-vuejs-plain colored"></i> Vue.js</span>
+            </div>
+        </div>
+        <div class="skills-group">
+            <h4>Tools & Infrastructure</h4>
+            <div class="skill-list">
+                <span class="skill-badge"><i class="devicon-linux-plain"></i> Linux</span>
+                <span class="skill-badge"><i class="devicon-git-plain colored"></i> Git</span>
+                <span class="skill-badge"><i class="devicon-docker-plain colored"></i> Docker</span>
+                <span class="skill-badge"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                <span class="skill-badge"><i class="devicon-ros-original colored"></i> ROS / ROS2</span>
+                <span class="skill-badge"><i class="fa-solid fa-network-wired" style="color: #ea580c;"></i> MQTT
+                    (Paho)</span>
+            </div>
+        </div>
+
+        <h2>Experience & Activities</h2>
+        <div class="exp-item">
+            <h4>SSAFY 15기</h4>
+            <div class="role">삼성전자 주관 교육 | 2026.01 ~ 2026.12</div>
+            <ul>
+                <li><strong>임베디드 로봇 트랙</strong></li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <h4>카카오 테크 캠퍼스 3기</h4>
+            <div class="role">카카오 주관 교육 | 2025.04 ~ 2025.11</div>
+            <ul>
+                <li><strong>Spring Boot 백엔드 개발 과정 수료</strong></li>
+            </ul>
+        </div>
+        <div class="exp-item">
+            <h4>IIC Lab (Intelligent Information & Control Laboratory)</h4>
+            <div class="role">Undergraduate Researcher | 2025.03 ~ 2025.12</div>
+            <ul>
+                <li><strong>ROS1 to ROS2 Shared Memory Communication:</strong> ROS1과 ROS2 간의 고속 데이터 교환을 위한 공유 메모리 기반의
+                    브릿지 최적화 통신 구현.</li>
+                <li><strong>ISO/DIS 21423:202X Requirement Analysis:</strong> 국제 표준(ISO) 요구 사항 명세서를 체계적으로 분석, 요약하여 로보틱스
+                    시스템에 대한 국제 기준 파악 및 구현.</li>
+            </ul>
+        </div>
+        <div class="page-number">- 1 -</div>
+    </div>
+
+    <!-- Projects Resume 페이지 -->
+    <div class="page">
+        <h2>Projects Summary</h2>
+
+        <table class="resume-table">
+            <tbody>
+                <tr>
+                    <th rowspan="5" class="proj-num">프로젝트<br>(1)</th>
+                    <th class="col-field">프로젝트명</th>
+                    <td colspan="3"><strong>엣지AI를 위한 초경량 이미지 분류 모델 최적화</strong> <span
+                            style="font-weight: normal; color: #6b7280; font-size: 0.9em; margin-left: 5px;">(3페이지)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-field">기 간</th>
+                    <td style="width: 35%;">2025.05 ~ 2025.06</td>
+                    <th class="col-field" style="width: 14%;">참여 인원</th>
+                    <td>1명</td>
+                </tr>
+                <tr>
+                    <th class="col-field">개 요</th>
+                    <td colspan="3">Jetson Orin Nano 환경에서 이미지 분류를 빠르게 처리할 수 있도록 모델을 경량화하고자 함</td>
+                </tr>
+                <tr>
+                    <th class="col-field">기술 환경</th>
+                    <td colspan="3">Jetson Orin Nano, Pytorch, TensorRT, QAT</td>
+                </tr>
+                <tr>
+                    <th class="col-field">담당 역할</th>
+                    <td colspan="3">데이터 분석, 최신 모델 파인튜닝</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table class="resume-table">
+            <tbody>
+                <tr>
+                    <th rowspan="5" class="proj-num">프로젝트<br>(2)</th>
+                    <th class="col-field">프로젝트명</th>
+                    <td colspan="3"><strong>Windows와 Linux 간 소켓 통신 채팅</strong> <span
+                            style="font-weight: normal; color: #6b7280; font-size: 0.9em; margin-left: 5px;">(4페이지)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-field">기 간</th>
+                    <td style="width: 35%;">2025.06 ~ 2025.06</td>
+                    <th class="col-field" style="width: 14%;">참여 인원</th>
+                    <td>1명</td>
+                </tr>
+                <tr>
+                    <th class="col-field">개 요</th>
+                    <td colspan="3">운영체제 중심의 통신 구조, 시스템 레벨 네트워크 지식, 소켓 프로그래밍 이해도를 증명하기 위해 개발한 멀티 플랫폼 채팅 어플리케이션</td>
+                </tr>
+                <tr>
+                    <th class="col-field">기술 환경</th>
+                    <td colspan="3">C++, Linux</td>
+                </tr>
+                <tr>
+                    <th class="col-field">담당 역할</th>
+                    <td colspan="3">서버 및 클라이언트 개발</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table class="resume-table">
+            <tbody>
+                <tr>
+                    <th rowspan="5" class="proj-num">프로젝트<br>(3)</th>
+                    <th class="col-field">프로젝트명</th>
+                    <td colspan="3"><strong>AI를 사용한 remote PPG 프로그램 개발</strong> <span
+                            style="font-weight: normal; color: #6b7280; font-size: 0.9em; margin-left: 5px;">(5페이지)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-field">기 간</th>
+                    <td style="width: 35%;">2024.08 ~ 2025.05</td>
+                    <th class="col-field" style="width: 14%;">참여 인원</th>
+                    <td>3명</td>
+                </tr>
+                <tr>
+                    <th class="col-field">개 요</th>
+                    <td colspan="3">rPPG 학습의 한계점인 데이터셋 부족 문제를 극복하고자 함</td>
+                </tr>
+                <tr>
+                    <th class="col-field">기술 환경</th>
+                    <td colspan="3">Pytorch, Mediapipe, OpenCV</td>
+                </tr>
+                <tr>
+                    <th class="col-field">담당 역할</th>
+                    <td colspan="3">데이터셋 제작 프로그램 개발, 심박수 추론 프로그램 개발</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+        <table class="resume-table">
+            <tbody>
+                <tr>
+                    <th rowspan="5" class="proj-num">프로젝트<br>(4)</th>
+                    <th class="col-field">프로젝트명</th>
+                    <td colspan="3"><strong>실력 맞춤 지역 스포츠 매칭 플랫폼 개발</strong> <span
+                            style="font-weight: normal; color: #6b7280; font-size: 0.9em; margin-left: 5px;">(6페이지)</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-field">기 간</th>
+                    <td style="width: 35%;">2025.08 ~ 2025.11</td>
+                    <th class="col-field" style="width: 14%;">참여 인원</th>
+                    <td>6명</td>
+                </tr>
+                <tr>
+                    <th class="col-field">개 요</th>
+                    <td colspan="3">지역 대학생들이 자유롭게 스포츠 팀을 꾸릴 수 있는 플랫폼 구성</td>
+                </tr>
+                <tr>
+                    <th class="col-field">기술 환경</th>
+                    <td colspan="3">Java, Spring Boot, MySQL</td>
+                </tr>
+                <tr>
+                    <th class="col-field">담당 역할</th>
+                    <td colspan="3">RESTful API 개발, 경기 매칭 로직 설계</td>
+                </tr>
+
+            </tbody>
+        </table>
+        <div class="page-number">- 2 -</div>
+    </div>
+
+    <!-- Jetson Orin nano Edge AI 프로젝트 페이지 -->
+    <div class="page">
+        <div class="project-header">
+            <h1>Edge AI Vision</h1>
+            <div class="project-meta">
+                <span>Edge AI를 위한 이미지 분류 최적화 <strong>(Personal Project)</strong> <span
+                        style="color: #6b7280; font-size: 0.9em; margin-left: 8px;"></span></span>
+                <div>
+                    <span style="margin-right: 15px;">2025.05 - 2025.06</span>
+                    <a href="https://www.notion.so/AI-MobileNetV4-3289170d883c80a3afa8e74d0a9c94ad" target="_blank"
+                        style="font-size: 0.85em; color: #2563eb;">🔗 상세 노션 링크</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-bottom: 5mm;">
+            <img src="images/edge_ai.png" alt="Edge AI Vision Architecture"
+                style="flex: 1; width: 48%; max-height: 80mm; object-fit: contain; border: 1px solid #eee; border-radius: 4px;">
+            <img src="images/tiny_imagenet_examples.png" alt="Tiny ImageNet Examples"
+                style="flex: 1; width: 48%; max-height: 80mm; object-fit: contain; border: 1px solid #eee; border-radius: 4px;">
+        </div>
+
+        <div class="project-section">
+            <h3>개요</h3>
+            <p>Jetson Orin Nano 기반 엣지 디바이스에서 높은 리소스 효율과 성능을 낼 수 있도록 MobileNetV4 기반의 초경량화 비전 분류 모델을 최적화한 프로젝트입니다.</p>
+        </div>
+
+        <div class="project-section">
+            <h3>기여한 부분 및 성과</h3>
+            <ul style="margin: 0; padding-left: 20px; font-size: 0.95em; color: #444; line-height: 1.6;">
+                <li><strong>역할:</strong> Tiny ImageNet 원본 데이터셋을 활용해 PyTorch로 모델을 훈련시키고, TensorRT 기반으로 높은 추론속도와 정확도를
+                    이끌어냈습니다.</li>
+                <li><strong>주요 기능:</strong> Depthwise Separable Convolution 기반의 자체 모델 아키텍처를 설계하여 정확도를 향상시켰으며,
+                    MobileNetV4를 주어진 데이터셋에 맞게 Full-Finetune하여 다양한 해상도의 이미지를 효과적으로 학습시켰습니다.</li>
+                <li><strong>성과 및 배운점:</strong> Jetson Orin Nano 환경에서 정확도 74.32%, 추론 속도 1.87ms를 달성했으며, 전체 파인튜닝 과정에서 학습률의
+                    미세한 차이가 QAT에 미치는 영향을 심도 있게 경험했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h3>트러블 슈팅 <span>(문제 해결 경험)</span></h3>
+            <p><strong>1. 양자화(QAT) 과정 중 정확도 하락 및 발산:</strong><br>
+                - <strong>상황:</strong> 초기 높은 학습률로 인해 QAT(Quantization Aware Training) 환경에서 모델이 수렴하지 못하고 정확도가 크게
+                떨어졌습니다.<br>
+                - <strong>해결:</strong> AdamW 옵티마이저로 오버피팅을 방지하고, Cosine Annealing 스케줄러를 적용하여 세밀하게 가중치를 업데이트한 결과 INT8 양자화
+                상황에서도 정확도를 2%p 향상시켰습니다.</p>
+            <p><strong>2. 딥 네크워크 기울기 소실 문제 파악:</strong><br>
+                - <strong>상황:</strong> 모델의 레이어(블록 13개)를 깊게 쌓았을 때 되려 인식 성능이 하락하는 문제를 파악했습니다.<br>
+                - <strong>해결:</strong> Residual Connection(잔차 연결)을 추가 적용하여 Gradient Vanishing을 예방하고, 실험을 거쳐 성능 하락이 방어되는
+                최적의 블록 수(8개)로 구조를 최적화했습니다.</p>
+        </div>
+
+        <div class="project-section">
+            <h3>사용 기술</h3>
+            <div class="project-tech">
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">TensorRT</span>
+                <span class="skill-badge">QAT</span>
+                <span class="skill-badge">MobileNetV4</span>
+            </div>
+        </div>
+        <div class="page-number">- 3 -</div>
+    </div>
+
+    <!-- 소켓 통신 프로젝트 페이지 -->
+    <div class="page">
+        <div class="project-header">
+            <h1>Socket Chat</h1>
+            <div class="project-meta">
+                <span>소켓 기반 크로스 플랫폼 채팅 서버 <strong>(Personal Project)</strong> <span
+                        style="color: #6b7280; font-size: 0.9em; margin-left: 8px;"></span></span>
+                <div>
+                    <span style="margin-right: 15px;">2025.06 - 2025.06</span>
+                    <a href="https://www.notion.so/Windows-Linux-3279170d883c809a9a67f4d88adf3f98" target="_blank"
+                        style="font-size: 0.85em; color: #2563eb;">🔗 상세 노션 링크</a>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/socket_chat.png" alt="Socket Chat Diagram"
+            style="width: 100%; max-height: 80mm; object-fit: contain; margin-bottom: 5mm; border: 1px solid #eee; border-radius: 4px;">
+
+        <div class="project-section">
+            <h3>개요</h3>
+            <p>운영체제 중심의 통신 구조, 시스템 레벨 네트워크 지식, 소켓 프로그래밍 이해도를 증명하기 위해 기초적인 통신 프로토콜 단계부터 개발한 멀티 플랫폼 채팅 어플리케이션입니다.</p>
+        </div>
+
+        <div class="project-section">
+            <h3>기여한 부분 및 성과</h3>
+            <ul style="margin: 0; padding-left: 20px; font-size: 0.95em; color: #444; line-height: 1.6;">
+                <li><strong>역할:</strong> 추상화된 C/C++ 표준 네트워크 레이어를 설계해 Windows와 Linux 환경 간 상호 연동이 제한 없이 작동하는 크로스 플랫폼 네트워크
+                    통신을 자체 구현했습니다.</li>
+                <li><strong>주요 기능:</strong> epoll 기반의 Event-Driven 아키텍처를 사용하여 기존 select 서버에 비해 훨씬 빠른 성능을 확보하고, 고정 길이 헤더
+                    + 가변 길이 메시지 방식을 채택하여 효율적인 프로토콜을 설계했습니다.</li>
+                <li><strong>성과 및 배운점:</strong> 서로 다른 OS에서도 원활히 통신 가능한 통신 서버를 성공적으로 구축하였으며, 문자열 인코딩으로 인해 발생할 수 있는 문제점을 깊이
+                    있게 학습했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h3>트러블 슈팅 <span>(문제 해결 경험)</span></h3>
+            <p><strong>1. 이기종 OS 간 인코딩 호환성 문제:</strong><br>
+                - <strong>상황:</strong> Linux(Ubuntu)는 기본 시스템 환경에서 UTF-8을 사용하지만, Windows는 CP949 인코딩을 사용하여 상호 통신 시 한글이
+                심각하게 깨지는 현상이 발생했습니다.<br>
+                - <strong>해결:</strong> 서버 측에서 모든 메시지를 UTF-8로 통일시켜 관리하되, 클라이언트 애플리케이션 수신/송신단(Windows 클라이언트 측)에서만
+                WideCharToMultiByte 등의 윈도우 API를 사용해 문자열 인코딩 변환 처리를 수행하도록 구조를 개편했습니다. 이를 통해 서버의 플랫폼 독립성과 확장성을 완벽히 보장했습니다.
+            </p>
+        </div>
+
+        <div class="project-section">
+            <h3>사용 기술</h3>
+            <div class="project-tech">
+                <span class="skill-badge">C / C++</span>
+                <span class="skill-badge">Socket IP/TCP</span>
+                <span class="skill-badge">OS / Network</span>
+                <span class="skill-badge">Linux</span>
+            </div>
+        </div>
+        <div class="page-number">- 4 -</div>
+    </div>
+
+    <!-- rPPG 프로젝트 페이지 -->
+    <div class="page">
+        <div class="project-header">
+            <h1>rPPG Health AI</h1>
+            <div class="project-meta">
+                <span>비접촉식 심박수 계산 프로그램 <strong>(Team Project)</strong> <span
+                        style="color: #6b7280; font-size: 0.9em; margin-left: 8px;">| 3명</span></span>
+                <div>
+                    <span style="margin-right: 15px;">2024.08 - 2025.05</span>
+                    <a href="https://www.notion.so/AI-rPPG-1b99170d883c800abeb6e24227733b04" target="_blank"
+                        style="font-size: 0.85em; color: #2563eb;">🔗 상세 노션 링크</a>
+                </div>
+            </div>
+        </div>
+
+        <img src="images/rppg.png" alt="rPPG AI Model Data Process"
+            style="width: 100%; max-height: 65mm; object-fit: contain; margin-bottom: 3mm; border: 1px solid #eee; border-radius: 4px;">
+
+        <div class="project-section">
+            <h3>개요</h3>
+            <p>웹캠 영상만으로 사용자의 안면 혈류 변화를 분석하여 심박수를 측정하는 비접촉식 AI 솔루션입니다.</p>
+        </div>
+
+        <div class="project-section">
+            <h3>기여한 부분 및 성과</h3>
+            <ul style="margin: 0; padding-left: 20px; font-size: 0.9em; color: #444; line-height: 1.45;">
+                <li><strong>역할:</strong> 데이터셋 생성을 위한 데이터 수집 파이프라인(Mediapipe & OpenCV 활용) 프로그램을 자체 개발하고, 1D-CNN과 GRU 결합
+                    모델을 기반으로 한 추론 엔진을 설계 및 구현했습니다.</li>
+                <li><strong>주요 기능:</strong> RGB 채널 색상 혼합 후 데이터셋 생성을 위해 논문을 리서칭하여 적절한 방법을 탐색했고, CV 처리를 위해 여러 라이브러리를 분석하여
+                    Mediapipe를 선택하여 ROI 영역을 안정적으로 추출했습니다.</li>
+                <li><strong>성과 및 배운점:</strong> 실험 참여자 3명의 심박수를 -2~+2 오차범위 내에서 90% 이상의 정확도로 측정하는 성과를 보였으며, 데이터셋이 AI 학습에
+                    얼마나 큰 영향을 미치는지 파악했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="project-section" style="margin-bottom: 1rem;">
+            <h3 style="margin-bottom: 0.5rem;">트러블 슈팅 <span>(문제 해결 경험)</span></h3>
+            <p style="margin-bottom: 0.4rem; font-size: 0.9em; line-height: 1.5;"><strong>1. 얼굴 인식 지연 문제
+                    해결:</strong><br>
+                - <strong>상황:</strong> OpenCV에 기본적으로 내장된 HaarCascade로는 30fps 웹캠의 성능을 이끌어내지 못하고 병목이 발생하는 문제가 생겼습니다.<br>
+                - <strong>해결:</strong> 여러 라이브러리를 사용해보고 성능을 비교하여 Mediapipe를 채택 후 웹캠의 성능을 이끌어내어 문제를 해결했습니다.</p>
+            <p style="margin-bottom: 0.4rem; font-size: 0.9em; line-height: 1.5;"><strong>2. VRAM 부족(OOM) 문제
+                    해결:</strong><br>
+                - <strong>상황:</strong> 고해상도 영상을 그대로 메모리에 올리면서 GPU Out-Of-Memory 오류가 빈번히 발생했습니다.<br>
+                - <strong>해결:</strong> 얼굴 영역 검출(Cropping) 파이프라인을 추가하여 입력 이미지 사이즈 자체를 축소시키고, 배치(Batch) 조절을 통해 제한된 리소스 내에서
+                원활하게 학습시켰습니다.</p>
+        </div>
+
+        <div class="project-section" style="margin-bottom: 0.5rem;">
+            <h3>사용 기술</h3>
+            <div class="project-tech">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">Mediapipe</span>
+                <span class="skill-badge">OpenCV</span>
+                <span class="skill-badge">CNN / GRU</span>
+            </div>
+        </div>
+        <div class="page-number">- 5 -</div>
+    </div>
+
+    <!-- 슛두리 프로젝트 페이지 -->
+    <div class="page">
+        <div class="project-header">
+            <h1>ShootDoori</h1>
+            <div class="project-meta">
+                <span>실력 맞춤 지역 스포츠 매칭 플랫폼 <strong>(Team Project)</strong> <span
+                        style="color: #6b7280; font-size: 0.9em; margin-left: 8px;">| 6명</span></span>
+                <div>
+                    <span style="margin-right: 15px;">2025.08 - 2025.11</span>
+                    <a href="https://coordinated-equinox-e4a.notion.site/32d9170d883c80ef9340f305a812f8ed?pvs=74"
+                        target="_blank" style="font-size: 0.85em; color: #2563eb;">🔗 상세 노션 링크</a>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: flex; gap: 10px; margin-bottom: 3mm;">
+            <img src="images/shoot_duri.png" alt="Shoot-duri Architecture"
+                style="flex: 1; width: 48%; max-height: 60mm; object-fit: contain; border: 1px solid #eee; border-radius: 4px;">
+            <img src="images/shoot_doori_main.png" alt="Shoot-duri Main Image"
+                style="flex: 1; width: 48%; max-height: 60mm; object-fit: contain; border: 1px solid #eee; border-radius: 4px;">
+        </div>
+
+        <div class="project-section">
+            <h3>개요</h3>
+            <p>지역 기반으로 스포츠 팀과 매치를 생성하고 용병을 모집하며, 실력 기반 리뷰를 남길 수 있는 모바일 플랫폼 서비스입니다.</p>
+        </div>
+
+        <div class="project-section">
+            <h3>기여한 부분 및 성과</h3>
+            <ul style="margin: 0; padding-left: 20px; font-size: 0.95em; color: #444; line-height: 1.6;">
+                <li><strong>역할:</strong> Spring Boot를 활용한 백엔드 RESTful API 개발 및 데이터베이스 설계를 주도했으며, 핵심 기능인 '매칭 시스템'과 '팀/용병
+                    모집 사이클' 로직을 아키텍처 관점에서 구성했습니다.</li>
+                <li><strong>주요 기능:</strong> 3-Layer-Architecture로 플랫폼을 설계하여 유지보수가 원활하도록 개발하였고, ERD 중심으로 설계하여 복잡해졌던 경기 매칭
+                    로직을 객체 중심으로 재설계했습니다.</li>
+                <li><strong>성과 및 배운점:</strong> 구글 플레이스토어에 앱을 성공적으로 런칭하였으며, 복잡한 연관관계를 가진 데이터베이스를 JPA와 같은 ORM을 활용하여 객체로서
+                    관리하는 방법을 체득했습니다.</li>
+            </ul>
+        </div>
+
+        <div class="project-section">
+            <h3>트러블 슈팅 <span>(문제 해결 경험)</span></h3>
+            <p><strong>1. 객체지향적 설계 개선:</strong><br>
+                - <strong>상황:</strong> Service Layer에서 도메인 객체(Team)의 상태를 직접 검사하는 방식 때문에 코드 결합도가 매우 상승해 있었습니다.<br>
+                - <strong>해결:</strong> 상태 검증 로직을 해당 메인 객체 내부로 캡슐화(메서드 위임)하여 결합도를 대폭 낮췄습니다.<br>
+                - <strong>결과:</strong> 요구사항 변경 시 유지보수 및 수정에 소요되는 시간을 절반 수준으로 단축했습니다.</p>
+            <p><strong>2. 복잡한 매칭 시스템 설계:</strong><br>
+                - <strong>상황:</strong> 다수의 사용자가 동시에 매칭을 요청하거나 팀 신청을 할 때 상태 관리가 복잡하여 충돌 문제가 발생했습니다.<br>
+                - <strong>해결:</strong> 팀 신청, 매칭 완료, 용병 모집 등 복잡한 상태 흐름을 ERD를 작성하며 설계하여 문제를 해결하였습니다.</p>
+        </div>
+
+        <div class="project-section">
+            <h3>사용 기술</h3>
+            <div class="project-tech">
+                <span class="skill-badge">Spring Boot</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">AWS</span>
+                <span class="skill-badge">Docker</span>
+                <span class="skill-badge">GitHub Actions</span>
+            </div>
+        </div>
+        <div class="page-number">- 6 -</div>
+    </div>
+
+</body>
+
+</html>

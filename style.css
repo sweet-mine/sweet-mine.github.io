@@ -1,0 +1,440 @@
+/* Premium Professional Portfolio Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8fafc; /* sleek light slate */
+    color: #334155;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Page Setup */
+.page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 20mm 20mm 25mm 20mm; /* Added bottom padding for page numbers */
+    margin: 15mm auto;
+    background: #ffffff;
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+    page-break-after: always;
+    position: relative;
+    border-radius: 12px; /* Soft modern corners */
+}
+
+.page:last-child {
+    page-break-after: auto;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    html {
+        zoom: 0.85; /* Better fit */
+    }
+    body {
+        background-color: #ffffff;
+    }
+    .page {
+        margin: 0;
+        padding: 15mm 20mm;
+        box-shadow: none;
+        border-radius: 0;
+        width: 100%;
+        page-break-after: always;
+        page-break-inside: avoid;
+        border: none;
+    }
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+    color: #0f172a;
+    line-height: 1.3;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2.5rem 0 1.25rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+    border-bottom: none; /* override previous inline styles if any */
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 4px;
+    background: linear-gradient(90deg, #4f46e5, #3b82f6);
+    border-radius: 2px;
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 1.5rem 0 0.5rem;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #1e293b;
+}
+
+p, li {
+    font-size: 0.95rem;
+    color: #475569;
+    word-break: keep-all;
+    margin-bottom: 0.75rem;
+}
+
+ul {
+    padding-left: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Highlights & Links */
+strong {
+    font-weight: 600;
+    color: #0f172a;
+    background: linear-gradient(120deg, rgba(199, 210, 254, 0.4) 0%, rgba(199, 210, 254, 0.4) 100%); /* Subtle indigo highlight */
+    background-repeat: no-repeat;
+    background-size: 100% 40%;
+    background-position: 0 85%;
+    padding: 0 2px;
+}
+
+a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+/* Profile Section */
+.profile-header {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.profile-header .name {
+    font-size: 3.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #0f172a 0%, #4338ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
+    display: inline-block;
+    border: none;
+    padding: 0;
+}
+
+.profile-header .title {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4f46e5 !important;
+    background-color: #eef2ff !important;
+    padding: 0.4rem 1rem !important;
+    border-radius: 9999px !important;
+    margin-bottom: 1.5rem;
+    border: none !important;
+    letter-spacing: -0.01em;
+}
+
+.contact-info {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: #64748b;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.contact-info strong {
+    background: none;
+    color: #475569;
+}
+
+.intro-text {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #334155;
+    font-weight: 400;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills-group {
+    margin-bottom: 1.5rem;
+}
+
+.skills-group h4 {
+    font-size: 0.85rem;
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skill-badge {
+    background: #ffffff;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    padding: 0.35rem 0.8rem;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.skill-badge i {
+    font-size: 1.1rem;
+}
+
+.tech-usage-section {
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9) !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    padding: 1.5rem !important;
+    margin: 2.5rem 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+}
+
+.tech-usage-section h4 {
+    color: #0f172a !important;
+    font-size: 1.1rem !important;
+    margin-bottom: 1rem !important;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Research & Experience */
+.exp-item {
+    margin-bottom: 1.5rem;
+}
+
+.exp-item h4 {
+    font-size: 1.15rem;
+    color: #0f172a;
+    margin-bottom: 0.25rem;
+}
+
+.exp-item .role {
+    font-size: 0.95rem;
+    color: #4f46e5;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+/* Project Layout */
+.project-header {
+    margin-bottom: 2rem;
+}
+
+.project-header h1 {
+    font-size: 2.25rem;
+    margin-bottom: 0.5rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+    border: none;
+    padding: 0;
+}
+
+.project-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.project-meta span:first-child {
+    color: #334155;
+    font-weight: 500;
+}
+
+.project-meta strong {
+    background: #eef2ff;
+    color: #4f46e5;
+    border: none;
+    padding: 0.2rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.8rem;
+    margin-left: 0.5rem;
+    font-weight: 600;
+}
+
+.project-section {
+    margin-bottom: 2rem;
+}
+
+.project-section h3 {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #0f172a;
+    border: none; /* remove wonky borders */
+    padding: 0;
+}
+
+.project-section h3::before {
+    content: '';
+    display: inline-block;
+    width: 6px;
+    height: 18px;
+    background: linear-gradient(180deg, #4f46e5, #3b82f6);
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.project-section h3 span {
+    font-size: 0.85rem;
+    color: #ea580c;
+    background-color: #ffedd5;
+    padding: 0.15rem 0.6rem;
+    border-radius: 9999px;
+    margin-left: 0.75rem;
+    font-weight: 600;
+}
+
+.project-section p strong {
+    background: none;
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-tech .skill-badge {
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    color: #475569;
+}
+
+/* Images */
+img {
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+}
+
+/* Resume Table */
+.resume-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 2rem;
+    font-size: 0.85rem;
+    background-color: #ffffff;
+}
+
+.resume-table th, .resume-table td {
+    border-bottom: 1px solid #e2e8f0;
+    border-right: 1px solid #e2e8f0;
+    padding: 0.6rem 0.8rem;
+    line-height: 1.5;
+}
+
+.resume-table tr:last-child th,
+.resume-table tr:last-child td {
+    border-bottom: none;
+}
+.resume-table th:last-child,
+.resume-table td:last-child {
+    border-right: none;
+}
+
+.resume-table th {
+    background-color: #f8fafc;
+    color: #1e293b;
+    font-weight: 600;
+    text-align: left;
+}
+
+.resume-table td {
+    color: #475569;
+}
+
+.resume-table .proj-num {
+    background-color: #f1f5f9;
+    color: #0f172a;
+    text-align: center;
+    font-weight: 700;
+    width: 12%;
+    vertical-align: middle;
+}
+
+.resume-table .col-field {
+    width: 16%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Page Numbering */
+.page-number {
+    position: absolute;
+    bottom: 15mm;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+@media print {
+    .page-number {
+        bottom: 10mm;
+    }
+}
