@@ -170,27 +170,27 @@
                 <tr>
                     <th rowspan="5" class="proj-num">프로젝트<br>(3)</th>
                     <th class="col-field">프로젝트명</th>
-                    <td colspan="3"><strong>AI를 사용한 remote PPG 프로그램 개발</strong> <span
+                    <td colspan="3"><strong>AI 기반 골프공 품질 관리 시스템</strong> <span
                             style="font-weight: normal; color: #6b7280; font-size: 0.9em; margin-left: 5px;">(5페이지)</span>
                     </td>
                 </tr>
                 <tr>
                     <th class="col-field">기 간</th>
-                    <td style="width: 35%;">2024.08 ~ 2025.05</td>
+                    <td style="width: 35%;">2026.05 ~ 2026.06</td>
                     <th class="col-field" style="width: 14%;">참여 인원</th>
                     <td>3명</td>
                 </tr>
                 <tr>
                     <th class="col-field">개 요</th>
-                    <td colspan="3">rPPG 학습의 한계점인 데이터셋 부족 문제를 극복하고자 함</td>
+                    <td colspan="3">스크린 골프장의 파손 골프공 검출 자동화 및 로봇 제어를 위한 웹 대시보드와 LLM 에이전트 통합 플랫폼</td>
                 </tr>
                 <tr>
                     <th class="col-field">기술 환경</th>
-                    <td colspan="3">Pytorch, Mediapipe, OpenCV</td>
+                    <td colspan="3">Python, YOLO, Vue.js, FastAPI, ROS2, WebSocket</td>
                 </tr>
                 <tr>
                     <th class="col-field">담당 역할</th>
-                    <td colspan="3">데이터셋 제작 프로그램 개발, 심박수 추론 프로그램 개발</td>
+                    <td colspan="3">CV 및 AI Agent 개발, 웹 대시보드 풀스택 개발, 네트워크 구성 및 시스템 통합</td>
                 </tr>
 
             </tbody>
@@ -350,62 +350,64 @@
         <div class="page-number">- 4 -</div>
     </div>
 
-    <!-- rPPG 프로젝트 페이지 -->
+    <!-- 골프공 품질 관리 시스템 프로젝트 페이지 -->
     <div class="page">
         <div class="project-header">
-            <h1>rPPG Health AI</h1>
+            <h1>AI 기반 골프공 품질 관리 시스템</h1>
             <div class="project-meta">
-                <span>비접촉식 심박수 계산 프로그램 <strong>(Team Project)</strong> <span
+                <span>골프공 파손 검출 및 로봇 제어 자동화 시스템 <strong>(Team Project)</strong> <span
                         style="color: #6b7280; font-size: 0.9em; margin-left: 8px;">| 3명</span></span>
                 <div>
-                    <span style="margin-right: 15px;">2024.08 - 2025.05</span>
-                    <a href="https://www.notion.so/AI-rPPG-1b99170d883c800abeb6e24227733b04" target="_blank"
+                    <span style="margin-right: 15px;">2026.05 - 2026.06</span>
+                    <a href="https://app.notion.com/p/AI-39e9170d883c80b8a461f22ecf938dc8" target="_blank"
                         style="font-size: 0.85em; color: #2563eb;">🔗 상세 노션 링크</a>
                 </div>
             </div>
         </div>
 
-        <img src="images/rppg.png" alt="rPPG AI Model Data Process"
-            style="width: 100%; max-height: 65mm; object-fit: contain; margin-bottom: 3mm; border: 1px solid #eee; border-radius: 4px;">
+        <div style="display: flex; gap: 10px; margin-bottom: 3mm;">
+            <img src="images/golf_1.png" alt="AI Golf Ball QC System Topology"
+                style="flex: 1; width: 48%; max-height: 60mm; object-fit: contain; border: 1px solid #eee; border-radius: 4px;">
+            <img src="images/golf_2.png" alt="AI Golf Ball QC System Diagram"
+                style="flex: 1; width: 48%; max-height: 60mm; object-fit: contain; border: 1px solid #eee; border-radius: 4px;">
+        </div>
 
         <div class="project-section">
             <h3>개요</h3>
-            <p>웹캠 영상만으로 사용자의 안면 혈류 변화를 분석하여 심박수를 측정하는 비접촉식 AI 솔루션입니다.</p>
+            <p>스크린 골프장의 파손 골프공 검출을 자동화하고, 사용자가 간편하게 골프공 관리 및 로봇 제어를 수행할 수 있는 웹 대시보드와 LLM 에이전트 통합 플랫폼입니다.</p>
         </div>
 
         <div class="project-section">
             <h3>기여한 부분 및 성과</h3>
             <ul style="margin: 0; padding-left: 20px; font-size: 0.9em; color: #444; line-height: 1.45;">
-                <li><strong>역할:</strong> 데이터셋 생성을 위한 데이터 수집 파이프라인(Mediapipe & OpenCV 활용) 프로그램을 자체 개발하고, 1D-CNN과 GRU 결합
-                    모델을 기반으로 한 추론 엔진을 설계 및 구현했습니다.</li>
-                <li><strong>주요 기능:</strong> RGB 채널 색상 혼합 후 데이터셋 생성을 위해 논문을 리서칭하여 적절한 방법을 탐색했고, CV 처리를 위해 여러 라이브러리를 분석하여
-                    Mediapipe를 선택하여 ROI 영역을 안정적으로 추출했습니다.</li>
-                <li><strong>성과 및 배운점:</strong> 실험 참여자 3명의 심박수를 -2~+2 오차범위 내에서 90% 이상의 정확도로 측정하는 성과를 보였으며, 데이터셋이 AI 학습에
-                    얼마나 큰 영향을 미치는지 파악했습니다.</li>
+                <li><strong>역할:</strong> 컴퓨터 비전(CV) 및 AI 에이전트 설계 및 구현을 담당하였으며, 웹 대시보드 풀스택 개발 및 전체 시스템 네트워크 구성을 주도하여 시스템 통합 팀장 역할을 수행했습니다.</li>
+                <li><strong>주요 기능:</strong> AI 기반 골프공 파손 여부 분류 및 정밀 운반 로봇 연동 기능, 실시간 로봇 상태 모니터링/제어 및 파손 데이터를 집계하는 대시보드 기능, Tool Calling과 연동된 친숙한 인터페이스의 LLM Agent 기능을 구축했습니다.</li>
+                <li><strong>성과 및 배운점:</strong> 제한된 노트북 하드웨어 리소스 한계를 우회하기 위해 로컬 처리와 클라우드 API를 결합한 분산 AI 아키텍처 및 에이전트 연동 기술을 숙달하였고, 통계 대시보드 내 대규모 트래픽 병목의 원인을 파악하고 데이터 패치 API를 고도화하여 최적화를 완수했습니다.</li>
             </ul>
         </div>
 
         <div class="project-section" style="margin-bottom: 1rem;">
             <h3 style="margin-bottom: 0.5rem;">트러블 슈팅 <span>(문제 해결 경험)</span></h3>
-            <p style="margin-bottom: 0.4rem; font-size: 0.9em; line-height: 1.5;"><strong>1. 얼굴 인식 지연 문제
-                    해결:</strong><br>
-                - <strong>상황:</strong> OpenCV에 기본적으로 내장된 HaarCascade로는 30fps 웹캠의 성능을 이끌어내지 못하고 병목이 발생하는 문제가 생겼습니다.<br>
-                - <strong>해결:</strong> 여러 라이브러리를 사용해보고 성능을 비교하여 Mediapipe를 채택 후 웹캠의 성능을 이끌어내어 문제를 해결했습니다.</p>
-            <p style="margin-bottom: 0.4rem; font-size: 0.9em; line-height: 1.5;"><strong>2. VRAM 부족(OOM) 문제
-                    해결:</strong><br>
-                - <strong>상황:</strong> 고해상도 영상을 그대로 메모리에 올리면서 GPU Out-Of-Memory 오류가 빈번히 발생했습니다.<br>
-                - <strong>해결:</strong> 얼굴 영역 검출(Cropping) 파이프라인을 추가하여 입력 이미지 사이즈 자체를 축소시키고, 배치(Batch) 조절을 통해 제한된 리소스 내에서
-                원활하게 학습시켰습니다.</p>
+            <p style="margin-bottom: 0.4rem; font-size: 0.9em; line-height: 1.5;"><strong>1. 로컬 LLM 에이전트의 느린 응답 문제 해결:</strong><br>
+                - <strong>상황:</strong> 노트북(4050 GPU) 환경에서 Gemma4:e2b 로컬 LLM을 통한 하드웨어 제어 에이전트를 구축했으나, 추론 연산으로 인해 평균 30초 이상의 응답 지연이 발생했습니다.<br>
+                - <strong>해결:</strong> 로컬 시스템은 오디오 전처리 및 STT(Faster Whisper) 수준의 가벼운 동작만 담당하고, 본격적인 자연어 추론은 클라우드 GPT-4o-mini API를 호출하는 구조로 아키텍처를 재설계했습니다. 또한, 부족한 응답 품질은 정밀하게 사전에 매핑된 Tool Calling 기능으로 보완했습니다.<br>
+                - <strong>결과:</strong> 복잡한 제어 Tool을 다중 호출하는 동작도 7초 이내(일반 텍스트 응답은 2초 이내)로 완료하여, 끊김 없이 즉각 상호작용이 가능한 수준으로 웹 환경에 통합했습니다.</p>
+            <p style="margin-bottom: 0.4rem; font-size: 0.9em; line-height: 1.5;"><strong>2. 통계 대시보드 초기 로딩 및 트래픽 병목 개선:</strong><br>
+                - <strong>상황:</strong> 에이전트 연동 대시보드의 첫 로딩이 과도하게 지연되는 문제가 발생했습니다. API 분석 결과, 첫 로딩 시 DB 내의 모든 이력과 고해상도 이미지 필드(약 3.82MB)를 한 번에 조회하고 클라이언트 브라우저 단에서 매번 통계를 계산하는 비효율적인 구조가 확인되었습니다.<br>
+                - <strong>해결:</strong> 1) 초기 조회 API에서 무거운 이미지 바이너리 필드를 제외, 2) 실시간 클라이언트 연산 대신 서버 측에서 주기적으로 집계(Aggregation)해 둔 통계 데이터를 즉각 내려받도록 개선, 3) 페이지네이션 기법 및 특정 검출 이력을 클릭 시에만 이미지 데이터를 비동기로 패치하는 Lazy Loading을 적용했습니다.<br>
+                - <strong>결과:</strong> 초기 로딩 트래픽을 3.82MB에서 1.7KB로 약 99.96% 감소시키고, 페이지 초기 렌더링 체감 속도를 비약적으로 단축시켰습니다.</p>
         </div>
 
         <div class="project-section" style="margin-bottom: 0.5rem;">
             <h3>사용 기술</h3>
             <div class="project-tech">
                 <span class="skill-badge">Python</span>
-                <span class="skill-badge">PyTorch</span>
-                <span class="skill-badge">Mediapipe</span>
-                <span class="skill-badge">OpenCV</span>
-                <span class="skill-badge">CNN / GRU</span>
+                <span class="skill-badge">YOLO</span>
+                <span class="skill-badge">FastAPI</span>
+                <span class="skill-badge">Vue.js</span>
+                <span class="skill-badge">ROS2</span>
+                <span class="skill-badge">WebSocket</span>
+                <span class="skill-badge">LLM Agent (GPT-4o-mini)</span>
             </div>
         </div>
         <div class="page-number">- 5 -</div>
