@@ -45,6 +45,8 @@ body {
     }
     body {
         background-color: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
     }
     .page {
         margin: 0;
@@ -55,6 +57,12 @@ body {
         page-break-after: always;
         page-break-inside: avoid;
         border: none;
+    }
+    .profile-header .name {
+        background: none;
+        -webkit-background-clip: initial;
+        -webkit-text-fill-color: initial;
+        color: #0f172a;
     }
 }
 
