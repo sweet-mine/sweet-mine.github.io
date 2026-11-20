@@ -175,7 +175,10 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     color: var(--ink);
     line-height: 1.3;
 }
@@ -212,7 +215,8 @@ h4 {
     color: #1e293b;
 }
 
-p, li {
+p,
+li {
     font-size: 0.86rem;
     color: var(--body);
     word-break: keep-all;
@@ -607,10 +611,21 @@ a:hover {
     text-align: center;
 }
 
-.summary-number-col { width: 12%; }
-.summary-label-col { width: 15%; }
-.summary-value-col { width: 39%; }
-.summary-count-col { width: 19%; }
+.summary-number-col {
+    width: 12%;
+}
+
+.summary-label-col {
+    width: 15%;
+}
+
+.summary-value-col {
+    width: 39%;
+}
+
+.summary-count-col {
+    width: 19%;
+}
 
 .summary-period {
     white-space: nowrap;
@@ -970,7 +985,7 @@ a:hover {
         margin: 10px auto;
     }
 
-    .page > * {
+    .page>* {
         min-width: 0;
         max-width: 100%;
     }
@@ -1043,8 +1058,19 @@ a:hover {
         white-space: normal;
     }
 
-    .summary-number-col { width: 16%; }
-    .summary-label-col { width: 21%; }
-    .summary-value-col { width: 39%; }
-    .summary-count-col { width: 24%; }
+    .summary-number-col {
+        width: 16%;
+    }
+
+    .summary-label-col {
+        width: 21%;
+    }
+
+    .summary-value-col {
+        width: 39%;
+    }
+
+    .summary-count-col {
+        width: 24%;
+    }
 }
