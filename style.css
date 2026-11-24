@@ -341,32 +341,6 @@ a:hover {
     font-size: 0.84rem;
 }
 
-.intro-text {
-    font-size: 0.88rem;
-    line-height: 1.52;
-    color: #334155;
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 0.48rem 0.9rem;
-}
-
-.intro-list {
-    margin: 0;
-    padding-left: 1.15rem;
-}
-
-.intro-list li {
-    font-size: 0.85rem;
-    line-height: 1.5;
-    margin-bottom: 0.15rem;
-    color: #334155;
-}
-
-.intro-list li:last-child {
-    margin-bottom: 0;
-}
-
 /* Skills */
 .skills-grid {
     display: flex;
@@ -415,12 +389,16 @@ a:hover {
     font-size: 0.9rem;
 }
 
-.skill-badge .py-icon {
-    color: #3776ab;
+.skill-badge .skill-icon {
+    width: 0.92rem;
+    height: 0.92rem;
+    object-fit: contain;
+    flex-shrink: 0;
+    display: inline-block;
 }
 
-.skill-badge .mqtt-icon {
-    color: #ea580c;
+.skill-badge .py-icon {
+    color: #3776ab;
 }
 
 .skill-badge .ai-icon {
@@ -431,7 +409,7 @@ a:hover {
 .exp-list {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.6rem;
 }
 
 .exp-item {
@@ -466,7 +444,7 @@ a:hover {
 
 .exp-item li {
     font-size: 0.79rem;
-    line-height: 1.44;
+    line-height: 1.48;
     margin-bottom: 0.15rem;
 }
 
