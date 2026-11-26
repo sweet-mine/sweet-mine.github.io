@@ -864,7 +864,7 @@ a:hover {
 }
 
 .visual-grid--kinderbot {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2.5fr 1fr;
 }
 
 .visual-grid--lumi {
@@ -872,7 +872,7 @@ a:hover {
 }
 
 .visual-grid--golf {
-    grid-template-columns: 1.05fr 0.95fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .visual-grid--edge {
@@ -906,9 +906,24 @@ a:hover {
     border-radius: 6px;
 }
 
-.visual-grid--lumi .visual-figure img,
-.visual-grid--golf .visual-figure img {
+.visual-grid--lumi .visual-figure img {
     height: 60mm;
+}
+
+.visual-grid--golf .visual-figure img {
+    height: 76mm;
+}
+
+.visual-grid--kinderbot .visual-figure img {
+    height: 68mm;
+}
+
+.visual-grid--kinderbot .visual-figure:nth-child(2) img {
+    width: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 10px;
 }
 
 .visual-grid--edge .visual-figure img {
@@ -1163,6 +1178,7 @@ a:hover {
     }
 
     .visual-figure img,
+    .visual-grid--kinderbot .visual-figure img,
     .visual-grid--lumi .visual-figure img,
     .visual-grid--golf .visual-figure img,
     .visual-grid--edge .visual-figure img,
