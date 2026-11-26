@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    var DEFAULT_ORDER = ['edge-ai', 'rppg', 'golf', 'lumi', 'kinderbot'];
+    var DEFAULT_ORDER = ['edge-ai', 'golf', 'lumi', 'kinderbot', 'rppg'];
     var SHORT_LABELS = {
         'kinderbot': 'KinderBot',
         'lumi': 'Lumi',

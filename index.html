@@ -23,10 +23,10 @@
         <a href="#experience">Experience</a>
         <a href="#projects-summary">Summary</a>
         <a href="#project-edge-ai">Edge AI</a>
-        <a href="#project-rppg">rPPG</a>
         <a href="#project-golf">Eagle Eye</a>
         <a href="#project-lumi">Lumi</a>
         <a href="#project-kinderbot">KinderBot</a>
+        <a href="#project-rppg">rPPG</a>
         <span class="nav-divider" aria-hidden="true"></span>
         <button type="button" class="print-btn" id="open-print-modal-btn">
             <i class="fa-solid fa-print" aria-hidden="true"></i> PDF 인쇄
@@ -61,16 +61,8 @@
                     </span>
                 </label>
                 <label class="print-option">
-                    <input type="checkbox" value="rppg" checked>
-                    <span class="print-order-badge" data-order-badge="rppg">2</span>
-                    <span class="print-option-text">
-                        <strong>비접촉 심박수 추정 AI — rPPG</strong>
-                        <span class="print-option-meta">학부 졸업논문</span>
-                    </span>
-                </label>
-                <label class="print-option">
                     <input type="checkbox" value="golf" checked>
-                    <span class="print-order-badge" data-order-badge="golf">3</span>
+                    <span class="print-order-badge" data-order-badge="golf">2</span>
                     <span class="print-option-text">
                         <strong>AI 기반 골프공 품질 관리 시스템 — Eagle Eye</strong>
                         <span class="print-option-meta">최우수상 · 트랙 1등</span>
@@ -78,7 +70,7 @@
                 </label>
                 <label class="print-option">
                     <input type="checkbox" value="lumi" checked>
-                    <span class="print-order-badge" data-order-badge="lumi">4</span>
+                    <span class="print-order-badge" data-order-badge="lumi">3</span>
                     <span class="print-option-text">
                         <strong>AI 실내 안전 동행 로봇 — Lumi</strong>
                         <span class="print-option-meta">우수상 · 반 1등</span>
@@ -86,10 +78,18 @@
                 </label>
                 <label class="print-option">
                     <input type="checkbox" value="kinderbot" checked>
-                    <span class="print-order-badge" data-order-badge="kinderbot">5</span>
+                    <span class="print-order-badge" data-order-badge="kinderbot">4</span>
                     <span class="print-option-text">
                         <strong>어린이집 교보재 준비 로봇 — KinderBot</strong>
                         <span class="print-option-meta">우수상 · 반 1등</span>
+                    </span>
+                </label>
+                <label class="print-option">
+                    <input type="checkbox" value="rppg" checked>
+                    <span class="print-order-badge" data-order-badge="rppg">5</span>
+                    <span class="print-option-text">
+                        <strong>비접촉 심박수 추정 AI — rPPG</strong>
+                        <span class="print-option-meta">학부 졸업논문</span>
                     </span>
                 </label>
             </div>
@@ -317,60 +317,6 @@
             </tbody>
         </table>
 
-        <table class="resume-table" data-project="rppg">
-            <colgroup>
-                <col class="summary-number-col">
-                <col class="summary-label-col">
-                <col class="summary-value-col">
-                <col class="summary-label-col">
-                <col class="summary-count-col">
-            </colgroup>
-            <tbody>
-                <tr>
-                    <th rowspan="5" class="proj-num">
-                        <span>프로젝트</span><span>(2)</span>
-                    </th>
-                    <th class="col-field">프로젝트명</th>
-                    <td colspan="3">
-                        <div class="summary-title">
-                            <div class="summary-title-main">
-                                <strong>비접촉 심박수 추정 AI — rPPG</strong>
-                                <span class="partner-pill">학부 졸업논문</span>
-                            </div>
-                            <a class="summary-page-link" href="#project-rppg">6–7페이지 ↗</a>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="col-field">기 간</th>
-                    <td class="summary-period">2024.08 ~ 2025.05</td>
-                    <th class="col-field">참여 인원</th>
-                    <td>3명</td>
-                </tr>
-                <tr>
-                    <th class="col-field">개 요</th>
-                    <td colspan="3">웹캠 얼굴 영상 피부색 변화 추출 및 CNN–GRU 기반 비접촉 실시간 심박수 추정</td>
-                </tr>
-                <tr>
-                    <th class="col-field">기술 환경</th>
-                    <td colspan="3">
-                        <div class="summary-tech-list">
-                            <span class="summary-tech-tag">Python</span>
-                            <span class="summary-tech-tag">PyTorch</span>
-                            <span class="summary-tech-tag">OpenCV</span>
-                            <span class="summary-tech-tag">MediaPipe</span>
-                            <span class="summary-tech-tag">CNN · GRU</span>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <th class="col-field">담당 역할</th>
-                    <td colspan="3">MediaPipe ROI, PPG 수집기 구현 및 CNN–GRU 웹캠 실시간 추론
-                        연동</td>
-                </tr>
-            </tbody>
-        </table>
-
         <table class="resume-table" data-project="golf">
             <colgroup>
                 <col class="summary-number-col">
@@ -381,7 +327,7 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th rowspan="5" class="proj-num"><span>프로젝트</span><span>(3)</span></th>
+                    <th rowspan="5" class="proj-num"><span>프로젝트</span><span>(2)</span></th>
                     <th class="col-field">프로젝트명</th>
                     <td colspan="3">
                         <div class="summary-title">
@@ -389,7 +335,7 @@
                                 <strong>AI 기반 골프공 품질 관리 시스템 — Eagle Eye</strong>
                                 <span class="award-pill">최우수상 · 트랙 1등</span>
                             </div>
-                            <a class="summary-page-link" href="#project-golf">8–9페이지 ↗</a>
+                            <a class="summary-page-link" href="#project-golf">6–7페이지 ↗</a>
                         </div>
                     </td>
                 </tr>
@@ -433,7 +379,7 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th rowspan="5" class="proj-num"><span>프로젝트</span><span>(4)</span></th>
+                    <th rowspan="5" class="proj-num"><span>프로젝트</span><span>(3)</span></th>
                     <th class="col-field">프로젝트명</th>
                     <td colspan="3">
                         <div class="summary-title">
@@ -441,7 +387,7 @@
                                 <strong>AI 실내 안전 동행 로봇 — Lumi</strong>
                                 <span class="award-pill">우수상 · 반 1등</span>
                             </div>
-                            <a class="summary-page-link" href="#project-lumi">10–11페이지 ↗</a>
+                            <a class="summary-page-link" href="#project-lumi">8–9페이지 ↗</a>
                         </div>
                     </td>
                 </tr>
@@ -485,7 +431,7 @@
             </colgroup>
             <tbody>
                 <tr>
-                    <th rowspan="5" class="proj-num"><span>프로젝트</span><span>(5)</span></th>
+                    <th rowspan="5" class="proj-num"><span>프로젝트</span><span>(4)</span></th>
                     <th class="col-field">프로젝트명</th>
                     <td colspan="3">
                         <div class="summary-title">
@@ -493,7 +439,7 @@
                                 <strong>어린이집 교보재 준비 로봇 — KinderBot</strong>
                                 <span class="award-pill">우수상 · 반 1등</span>
                             </div>
-                            <a class="summary-page-link" href="#project-kinderbot">12–13페이지 ↗</a>
+                            <a class="summary-page-link" href="#project-kinderbot">10–11페이지 ↗</a>
                         </div>
                     </td>
                 </tr>
@@ -528,6 +474,60 @@
             </tbody>
         </table>
 
+        <table class="resume-table" data-project="rppg">
+            <colgroup>
+                <col class="summary-number-col">
+                <col class="summary-label-col">
+                <col class="summary-value-col">
+                <col class="summary-label-col">
+                <col class="summary-count-col">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th rowspan="5" class="proj-num">
+                        <span>프로젝트</span><span>(5)</span>
+                    </th>
+                    <th class="col-field">프로젝트명</th>
+                    <td colspan="3">
+                        <div class="summary-title">
+                            <div class="summary-title-main">
+                                <strong>비접촉 심박수 추정 AI — rPPG</strong>
+                                <span class="partner-pill">학부 졸업논문</span>
+                            </div>
+                            <a class="summary-page-link" href="#project-rppg">12–13페이지 ↗</a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-field">기 간</th>
+                    <td class="summary-period">2024.08 ~ 2025.05</td>
+                    <th class="col-field">참여 인원</th>
+                    <td>3명</td>
+                </tr>
+                <tr>
+                    <th class="col-field">개 요</th>
+                    <td colspan="3">웹캠 얼굴 영상 피부색 변화 추출 및 CNN–GRU 기반 비접촉 실시간 심박수 추정</td>
+                </tr>
+                <tr>
+                    <th class="col-field">기술 환경</th>
+                    <td colspan="3">
+                        <div class="summary-tech-list">
+                            <span class="summary-tech-tag">Python</span>
+                            <span class="summary-tech-tag">PyTorch</span>
+                            <span class="summary-tech-tag">OpenCV</span>
+                            <span class="summary-tech-tag">MediaPipe</span>
+                            <span class="summary-tech-tag">CNN · GRU</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th class="col-field">담당 역할</th>
+                    <td colspan="3">MediaPipe ROI, PPG 수집기 구현 및 CNN–GRU 웹캠 실시간 추론
+                        연동</td>
+                </tr>
+            </tbody>
+        </table>
+
 
         <div class="page-number">- 3 -</div>
     </div>
@@ -558,9 +558,8 @@
 
         <div class="kpi-strip">
             <div class="kpi-chip">
-                <span class="kpi-value">INT8 1.87 ms</span>
-                <span class="kpi-label">Jetson Orin Nano 평균 모델
-                    추론</span>
+                <span class="kpi-value">추론 속도 1.87 ms</span>
+                <span class="kpi-label">Jetson Orin Nano 환경 측정</span>
             </div>
             <div class="kpi-chip">
                 <span class="kpi-value">정확도 74.32%</span>
@@ -576,47 +575,42 @@
         <div class="visual-grid visual-grid--edge">
             <figure class="visual-figure">
                 <img src="images/edge_ai.png" alt="Torch-TensorRT INT8 컴파일 코드 및 Jetson 계측 결과">
-                <figcaption>Torch-TensorRT INT8 컴파일 · Jetson
-                    Orin Nano 계측 출력</figcaption>
+                <figcaption>Jetson Orin Nano 추론 최종 결과</figcaption>
             </figure>
             <figure class="visual-figure">
                 <img src="images/tiny_imagenet_examples.png" alt="Tiny ImageNet 200개 클래스 64x64 데이터셋 샘플">
-                <figcaption>Tiny ImageNet 데이터셋 (64×64 해상도 · 200개
-                    클래스)</figcaption>
+                <figcaption>Tiny ImageNet 데이터셋</figcaption>
             </figure>
         </div>
 
         <div class="project-section">
             <h3>개요</h3>
             <p>Jetson Orin Nano에서 Tiny ImageNet(64×64, 200클래스)을
-                실시간 분류하기 위한 경량 CNN 설계 및
-                MobileNetV4 QAT·TensorRT INT8
+                실시간 분류하기 위한 자체 모델 제작 및 MobileNetV4 파인튜닝 및 INT8 양자화, TensorRT
                 최적화</p>
         </div>
 
         <div class="project-section">
             <h3>기여한 부분 및 성과</h3>
             <ul>
-                <li><strong>구조 실험 · 조정:</strong> Depthwise
-                    Separable Conv 자체 CNN(7→12→8블록)
-                    비교 및 MobileNetV4 <span class="hl">앞단 합성곱 2곳
+                <li><strong>모델 구조 실험 및 조정:</strong> Depthwise
+                    Separable Conv CNN (7→12→8블록)
+                    비교 및 MobileNetV4 <span class="hl">앞단 컨벌루션 레이어 2곳
                         stride 2→1 조정</span>(64×64 공간 정보 보존) 후 전
                     층 파인튜닝
                 </li>
                 <li><strong>INT8 배포 성과:</strong> QAT →
                     TorchScript → Torch-TensorRT(INT8)
                     컴파일,
-                    MobileNetV4-Conv-Small 자체 평가 <span class="hl">정확도 74.32%</span> · 평균 모델
+                    MobileNetV4-Conv-Small 기준 <span class="hl">정확도 74.32%</span>, 모델
                     추론 <span class="hl">1.87
-                        ms</span>(전처리·복사 제외) · <span class="hl">GPU 메모리 10.93 MB</span>
+                        ms</span>, <span class="hl">GPU 메모리 10.93 MB</span>
                 </li>
             </ul>
         </div>
 
         <div class="page-number">- 4 -</div>
-    </div>
-
-    <!-- PAGE 5: Edge AI Vision (2/2) -->
+    </div>    <!-- PAGE 5: Edge AI Vision (2/2) -->
     <div class="page project-page" id="project-edge-ai-detail" data-project="edge-ai">
         <div class="project-sub-header">
             <div>
@@ -636,27 +630,26 @@
             <div class="trouble-module">
                 <div class="trouble-card">
                     <div class="trouble-title">1.
-                        정확도·지연·메모리 트레이드오프 기반 배포 모델 선정
+                        정확도, 지연, 메모리 Trade-Off 배포 모델 선정
                     </div>
                     <div class="trouble-rows">
                         <div class="trouble-row"><span class="t-tag t-tag--problem">문제</span><span>자체
                                 CNN
-                                8블록(1.12 ms)은
+                                모델은
                                 정확도 52.85% 한계 /
                                 MobileNetV4-Medium(75.99%)은
-                                지연(2.78
-                                ms)·메모리(33.98 MB) 부담
-                                과다</span></div>
+                                추론 속도(2.78
+                                ms)·메모리(33.98 MB) 사용</span></div>
                         <div class="trouble-row"><span class="t-tag t-tag--action">해결</span><span>학습
                                 정확도 단독 비교
                                 대신 Jetson
-                                실기체에서 정확도·모델 지연·GPU
-                                메모리·전력 동시 계측 비교</span>
+                                실기체에서 정확도, 추론 속도, GPU
+                                메모리, 전력 사용량 동시 측정 후 비교</span>
                         </div>
                         <div class="trouble-row"><span class="t-tag t-tag--result">결과</span><span>Medium
                                 대비
-                                1.67%p 차이로
-                                <strong>지연 0.91 ms · 메모리
+                                정확도 1.67%p 차이로
+                                <strong>추론 속도 0.91 ms, 메모리
                                     23.05 MB
                                     절감</strong>한
                                 MobileNetV4-Conv-Small
@@ -690,13 +683,12 @@
                     <div class="trouble-title">2. 64×64 저해상도 입력 대응을 위한 사전학습 모델 레이어 조정</div>
                     <div class="trouble-rows">
                         <div class="trouble-row"><span class="t-tag t-tag--problem">문제</span><span>ImageNet(224×224)
-                                사전학습 MobileNetV4에 64×64 입력을 그대로 적용 시 초반 stride=2 다운샘플링으로 공간 특징 손실 우려(단순 업샘플링은 연산량만
-                                증가)</span></div>
+                                사전학습 MobileNetV4에 64×64 입력을 그대로 적용 시 초반 stride=2 다운샘플링으로 공간 특징 손실 우려</span></div>
                         <div class="trouble-row"><span class="t-tag t-tag--action">해결</span><span>분류기 헤드를 200클래스로 교체하고
-                                앞단 합성곱 2곳(<code>blocks[0][0]</code>·<code>blocks[1][0]</code>)의 <code>stride</code>를
-                                2→1로 변경 후 전 층 파인튜닝</span></div>
+                                앞단 컨벌루션 레이어 2곳의 <code>stride</code>를
+                                2→1로 변경 후 풀파인튜닝</span></div>
                         <div class="trouble-row"><span class="t-tag t-tag--result">결과</span><span>64×64 저해상도 입력을 유지하며 공간
-                                정보를 보존해 TensorRT INT8 기준 <strong>정확도 74.32% · 추론 1.87 ms</strong> 달성</span></div>
+                                정보를 보존해 TensorRT INT8 기준 <strong>정확도 74.32%, 추론 1.87 ms</strong> 달성</span></div>
                     </div>
                 </div>
                 <div class="trouble-visual">
@@ -722,267 +714,7 @@
         <div class="page-number">- 5 -</div>
     </div>
 
-    <!-- PAGE 6: rPPG (1/2) -->
-    <div class="page project-page project-page--overview" id="project-rppg" data-project="rppg">
-        <div class="project-header">
-            <h1>비접촉 심박수 추정 AI — rPPG</h1>
-            <p class="project-subtitle">웹캠 얼굴 영상
-                기반 피부색 변화 추출 및 CNN–GRU 실시간 심박수
-                추정
-            </p>
-            <div class="project-meta">
-                <div class="project-facts">
-                    <span class="project-team">팀
-                        프로젝트 · 3명</span>
-                    <span class="partner-pill">학부
-                        졸업논문 공동저자</span>
-                    <span class="project-period">2024.08
-                        — 2025.05</span>
-                </div>
-                <nav class="project-links" aria-label="비접촉 심박수 추정 AI — rPPG 관련 링크">
-                    <a href="https://coordinated-equinox-e4a.notion.site/1b99170d883c800abeb6e24227733b04"
-                        target="_blank" rel="noopener noreferrer"><i class="devicon-notion-plain"
-                            aria-hidden="true"></i>
-                        상세
-                        노션 ↗</a>
-                </nav>
-            </div>
-        </div>
-
-        <div class="kpi-strip">
-            <div class="kpi-chip">
-                <span class="kpi-value">MediaPipe
-                    + OpenCV</span>
-                <span class="kpi-label">양쪽 뺨
-                    20×20 ROI · RGB 변화 추출</span>
-            </div>
-            <div class="kpi-chip">
-                <span class="kpi-value">1D-CNN +
-                    GRU</span>
-                <span class="kpi-label">50-step
-                    시계열 실시간 웹캠 추론</span>
-            </div>
-            <div class="kpi-chip">
-                <span class="kpi-value">학부
-                    졸업논문</span>
-                <span class="kpi-label">강원대학교
-                    전기전자공학과 공동저자</span>
-            </div>
-        </div>
-
-        <div class="visual-grid visual-grid--rppg">
-            <figure class="visual-figure">
-                <img src="images/rppg_signal.png" alt="양쪽 뺨 ROI에서 추출한 RGB 변화량 시계열 신호">
-                <figcaption>양쪽 뺨 20×20 ROI 가중
-                    RGB 변화량 600프레임 시계열 신호
-                </figcaption>
-            </figure>
-            <figure class="visual-figure">
-                <img src="images/rppg_model.png" alt="1D-CNN과 GRU 기반 심박수 추정 모델 구조">
-                <figcaption>1D-CNN · BatchNorm ·
-                    ReLU · GRU · FC 모델 구조
-                </figcaption>
-            </figure>
-        </div>
-
-        <div class="project-section">
-            <h3>개요</h3>
-            <p>일반 웹캠 얼굴 영상에서 혈류에 따른 미세한 피부색 변화를
-                추출하고 기준 PPG 센서 심박수와 매칭해 CNN–GRU
-                모델로
-                실시간 심박수를 추정하는 졸업논문 프로젝트</p>
-        </div>
-
-        <div class="project-section">
-            <h3>기여한 부분 및 성과</h3>
-            <ul>
-                <li><strong>수집 파이프라인
-                        구현:</strong>
-                    OpenCV·MediaPipe Face Mesh로
-                    <span class="hl">양쪽 뺨 20×20
-                        ROI 추적 및 가중 RGB 변화량(|ΔR|
-                        + 2|ΔG| +
-                        0.5|ΔB|) 추출</span>, 시리얼
-                    PPG 센서 심박수 매칭·600프레임 단위
-                    CSV·그래프 저장
-                    프로그램 개발
-                </li>
-                <li><strong>실시간 추론 연동:</strong>
-                    저장 가중치·스케일러를 웹캠 파이프라인에 연결해
-                    <span class="hl">50개 시계열 색
-                        변화 입력 → 1D-CNN + GRU 실시간
-                        심박수 추론</span>
-                    구현(추론 시 기준 센서 미사용)
-                </li>
-                <li><strong>후속 진단 · 검증 기준
-                        정리:</strong> 세미나 실험에서
-                    <span class="hl">과적합
-                        및 60–80 BPM 구간 데이터 편중
-                        진단</span>, 세션별 분할·타임스탬프
-                    동기화·MAE/RMSE
-                    기반 검증 설계 도출
-                </li>
-            </ul>
-        </div>
-
-        <div class="page-number">- 6 -</div>
-    </div>
-
-    <!-- PAGE 7: rPPG (2/2) -->
-    <div class="page project-page" id="project-rppg-detail" data-project="rppg">
-        <div class="project-sub-header">
-            <div>
-                <span class="project-sub-title">비접촉
-                    심박수 추정 AI —
-                    rPPG</span>
-                <span class="project-sub-label">트러블
-                    슈팅 및 데이터 진단</span>
-            </div>
-            <span class="page-step-badge">2
-                / 2</span>
-        </div>
-
-        <div class="project-section">
-            <h3>트러블 슈팅 <span class="section-tag">문제
-                    해결 경험</span></h3>
-
-            <div class="trouble-module">
-                <div class="trouble-card">
-                    <div class="trouble-title">
-                        1. 얼굴 검출 프레임 지연
-                        및 입력 데이터 경량화
-                    </div>
-                    <div class="trouble-rows">
-                        <div class="trouble-row">
-                            <span class="t-tag t-tag--problem">문제</span><span>초기
-                                OpenCV
-                                HaarCascade
-                                기반 얼굴 검출
-                                시 30fps
-                                웹캠 실시간
-                                처리 병목
-                                및 고해상도
-                                프레임 직접
-                                입력 시
-                                연산·메모리
-                                부담
-                                발생</span>
-                        </div>
-                        <div class="trouble-row">
-                            <span class="t-tag t-tag--action">해결</span><span>얼굴
-                                랜드마크 추적을
-                                MediaPipe
-                                Face
-                                Mesh로
-                                전환하고 양쪽
-                                뺨 20×20
-                                ROI 평균 색
-                                변화 1차원
-                                시계열 특징으로
-                                압축</span>
-                        </div>
-                        <div class="trouble-row">
-                            <span class="t-tag t-tag--result">결과</span><span>웹캠
-                                실시간 입력
-                                속도 확보 및
-                                경량
-                                1D-CNN·GRU
-                                모델 학습·추론
-                                파이프라인
-                                안정화</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="trouble-module">
-                <div class="trouble-card">
-                    <div class="trouble-title">
-                        2. 학습 과적합 및 심박수
-                        구간 데이터 편중 진단
-                    </div>
-                    <div class="trouble-rows">
-                        <div class="trouble-row">
-                            <span class="t-tag t-tag--problem">문제</span><span>후속
-                                실험에서
-                                Train
-                                Loss 대비
-                                Validation
-                                Loss
-                                정체·초기
-                                급수렴 양상이
-                                관찰되고 수집
-                                데이터가
-                                60–80
-                                BPM 구간에
-                                편중</span>
-                        </div>
-                        <div class="trouble-row">
-                            <span class="t-tag t-tag--action">해결</span><span>에포크별
-                                손실 곡선과
-                                라벨 분포를
-                                분석해
-                                피험자·세션
-                                분리 분할 및
-                                시리얼–영상
-                                타임스탬프 정밀
-                                동기화 개선안
-                                도출</span>
-                        </div>
-                        <div class="trouble-row">
-                            <span class="t-tag t-tag--result">결과</span><span>모델
-                                구조뿐 아니라
-                                데이터
-                                분포·분할
-                                기준·독립
-                                테스트(MAE/RMSE)
-                                설계가 실사용
-                                성능의 핵심임을
-                                검증</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="trouble-visual">
-                    <div class="visual-grid">
-                        <figure class="visual-figure">
-                            <img src="images/rppg_loss_overfit.png" alt="Train Loss 대비 Validation Loss 정체 과적합 진단 곡선">
-                            <figcaption>
-                                후속 실험
-                                Train/Validation
-                                Loss 과적합
-                                진단 곡선
-                            </figcaption>
-                        </figure>
-                        <figure class="visual-figure">
-                            <img src="images/rppg_loss_converge.png" alt="초기 에포크 급수렴 양상 학습 손실 곡선">
-                            <figcaption>
-                                초기 에포크
-                                급수렴 양상 및
-                                학습 분포 점검
-                                곡선
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="project-section">
-            <h3>사용 기술</h3>
-            <div class="project-tech">
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">PyTorch</span>
-                <span class="skill-badge">OpenCV</span>
-                <span class="skill-badge">MediaPipe</span>
-                <span class="skill-badge">CNN
-                    · GRU</span>
-            </div>
-        </div>
-
-        <div class="page-number">- 7 -</div>
-    </div>
-
-    <!-- PAGE 8: Eagle Eye (1/2) -->
+    <!-- PAGE 6: Eagle Eye (1/2) -->
     <div class="page project-page project-page--overview" id="project-golf" data-project="golf">
         <div class="project-header">
             <h1>AI 기반 골프공 품질 관리 시스템 — Eagle Eye</h1>
@@ -1057,10 +789,8 @@
             </ul>
         </div>
 
-        <div class="page-number">- 8 -</div>
-    </div>
-
-    <!-- PAGE 9: Eagle Eye (2/2) -->
+        <div class="page-number">- 6 -</div>
+    </div>    <!-- PAGE 7: Eagle Eye (2/2) -->
     <div class="page project-page" id="project-golf-detail" data-project="golf">
         <div class="project-sub-header">
             <div>
@@ -1140,10 +870,10 @@
             </div>
         </div>
 
-        <div class="page-number">- 9 -</div>
+        <div class="page-number">- 7 -</div>
     </div>
 
-    <!-- PAGE 10: Lumi (1/2) -->
+    <!-- PAGE 8: Lumi (1/2) -->
     <div class="page project-page project-page--overview lumi-project" id="project-lumi" data-project="lumi">
         <div class="project-header">
             <h1>AI 실내 안전 동행 로봇 — Lumi</h1>
@@ -1215,10 +945,8 @@
             </ul>
         </div>
 
-        <div class="page-number">- 10 -</div>
-    </div>
-
-    <!-- PAGE 11: Lumi (2/2) -->
+        <div class="page-number">- 8 -</div>
+    </div>    <!-- PAGE 9: Lumi (2/2) -->
     <div class="page project-page" id="project-lumi-detail" data-project="lumi">
         <div class="project-sub-header">
             <div>
@@ -1290,10 +1018,10 @@
             </div>
         </div>
 
-        <div class="page-number">- 11 -</div>
+        <div class="page-number">- 9 -</div>
     </div>
 
-    <!-- PAGE 12: KinderBot (1/2) -->
+    <!-- PAGE 10: KinderBot (1/2) -->
     <div class="page project-page project-page--overview" id="project-kinderbot" data-project="kinderbot">
         <div class="project-header">
             <h1>어린이집 교보재 준비 로봇 — KinderBot</h1>
@@ -1359,10 +1087,8 @@
             </ul>
         </div>
 
-        <div class="page-number">- 12 -</div>
-    </div>
-
-    <!-- PAGE 13: KinderBot (2/2) -->
+        <div class="page-number">- 10 -</div>
+    </div>    <!-- PAGE 11: KinderBot (2/2) -->
     <div class="page project-page" id="project-kinderbot-detail" data-project="kinderbot">
         <div class="project-sub-header">
             <div>
@@ -1438,6 +1164,168 @@
                 <span class="skill-badge">Isaac Sim</span>
                 <span class="skill-badge">FastAPI · PostgreSQL</span>
                 <span class="skill-badge">Docker · GitLab CI</span>
+            </div>
+        </div>
+
+        <div class="page-number">- 11 -</div>
+    </div>
+
+    <!-- PAGE 12: rPPG (1/2) -->
+    <div class="page project-page project-page--overview" id="project-rppg" data-project="rppg">
+        <div class="project-header">
+            <h1>비접촉 심박수 추정 AI — rPPG</h1>
+            <p class="project-subtitle">웹캠 얼굴 영상
+                기반 피부색 변화 추출 및 실시간 심박수
+                추정
+            </p>
+            <div class="project-meta">
+                <div class="project-facts">
+                    <span class="project-team">팀
+                        프로젝트 · 3명</span>
+                    <span class="partner-pill">학부
+                        졸업논문 공동저자</span>
+                    <span class="project-period">2024.08
+                        — 2025.05</span>
+                </div>
+                <nav class="project-links" aria-label="비접촉 심박수 추정 AI — rPPG 관련 링크">
+                    <a href="https://coordinated-equinox-e4a.notion.site/1b99170d883c800abeb6e24227733b04"
+                        target="_blank" rel="noopener noreferrer"><i class="devicon-notion-plain"
+                            aria-hidden="true"></i>
+                        상세
+                        노션 ↗</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="kpi-strip">
+            <div class="kpi-chip">
+                <span class="kpi-value">MediaPipe
+                    + OpenCV</span>
+                <span class="kpi-label">양쪽 뺨 색상 변화 추출</span>
+            </div>
+            <div class="kpi-chip">
+                <span class="kpi-value">1D-CNN +
+                    GRU</span>
+                <span class="kpi-label">실시간 웹캠 추론</span>
+            </div>
+            <div class="kpi-chip">
+                <span class="kpi-value">학부
+                    졸업논문</span>
+                <span class="kpi-label">강원대학교
+                    전기전자공학과 공동저자</span>
+            </div>
+        </div>
+
+        <div class="visual-grid visual-grid--rppg">
+            <figure class="visual-figure">
+                <img src="images/rppg_signal.png" alt="양쪽 뺨 ROI에서 추출한 RGB 변화량 시계열 신호">
+                <figcaption>양쪽 뺨 20×20 ROI 가중
+                    RGB 변화량 600프레임 시계열 신호
+                </figcaption>
+            </figure>
+            <figure class="visual-figure">
+                <img src="images/rppg_model.png" alt="1D-CNN과 GRU 기반 심박수 추정 모델 구조">
+                <figcaption>모델 구조도
+                </figcaption>
+            </figure>
+        </div>
+
+        <div class="project-section">
+            <h3>개요</h3>
+            <p>웹캠 얼굴 영상에서 혈류에 따른 미세한 피부색 변화를
+                추출하고 기준 PPG 센서 심박수와 매칭해 CNN–GRU
+                모델로
+                실시간 심박수를 추정하는 졸업논문 프로젝트</p>
+        </div>
+
+        <div class="project-section">
+            <h3>기여한 부분 및 성과</h3>
+            <ul>
+                <li><strong>수집 파이프라인
+                        구현:</strong>
+                    OpenCV, MediaPipe Face Mesh로
+                    <span class="hl">양쪽 뺨 20×20
+                        ROI 추적 및 가중 RGB 변화량(|ΔR|
+                        + 2|ΔG| +
+                        0.5|ΔB|) 추출</span>, PPG 센서 심박수 매칭·600프레임 단위
+                    CSV 저장 프로그램 개발
+                </li>
+                <li><strong>실시간 추론 연동:</strong>
+                    모델을 웹캠 파이프라인에 연결해
+                    <span class="hl">시계열 색
+                        변화 입력 → 1D-CNN + GRU 실시간
+                        심박수 추론</span>
+                    구현
+                </li>
+                <li><strong>후속 진단 후 데이터 보강:</strong> 세미나 실험에서
+                    <span class="hl">과적합
+                        및 60–80 BPM 구간 데이터 편중
+                        진단</span> 후 데이터 보강
+                </li>
+            </ul>
+        </div>
+
+        <div class="page-number">- 12 -</div>
+    </div>    <!-- PAGE 13: rPPG (2/2) -->
+    <div class="page project-page" id="project-rppg-detail" data-project="rppg">
+        <div class="project-sub-header">
+            <div>
+                <span class="project-sub-title">비접촉
+                    심박수 추정 AI —
+                    rPPG</span>
+                <span class="project-sub-label">트러블
+                    슈팅 및 데이터 진단</span>
+            </div>
+            <span class="page-step-badge">2
+                / 2</span>
+        </div>
+
+        <div class="project-section">
+            <h3>트러블 슈팅 <span class="section-tag">문제 해결 경험</span></h3>
+
+            <div class="trouble-module">
+                <div class="trouble-card">
+                    <div class="trouble-title">얼굴 검출 프레임 지연 및 입력 데이터 경량화</div>
+                    <div class="trouble-rows">
+                        <div class="trouble-row">
+                            <span class="t-tag t-tag--problem">문제</span><span>초기 OpenCV HaarCascade 기반 얼굴 검출 시 30fps 웹캠 실시간 처리 병목 및 고해상도 프레임 직접 입력 시 연산, 메모리 부담 발생</span>
+                        </div>
+                        <div class="trouble-row">
+                            <span class="t-tag t-tag--action">해결</span><span>얼굴 랜드마크 추적을 MediaPipe Face Mesh로 전환하고 양쪽 뺨 20×20 ROI 평균 색 변화 1차원 시계열 특징으로 압축</span>
+                        </div>
+                        <div class="trouble-row">
+                            <span class="t-tag t-tag--result">결과</span><span>웹캠 실시간 입력 속도 확보 및 경량 모델 학습, 추론 파이프라인 안정화</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h3>학습 손실 곡선 <span class="section-tag">후속 세미나 관찰</span></h3>
+            <div class="trouble-visual">
+                <div class="visual-grid">
+                    <figure class="visual-figure">
+                        <img src="images/rppg_loss_overfit.png" alt="Train Loss 대비 Validation Loss 정체 과적합 관찰 곡선">
+                        <figcaption>Train/Validation Loss 과적합 관찰 곡선</figcaption>
+                    </figure>
+                    <figure class="visual-figure">
+                        <img src="images/rppg_loss_converge.png" alt="초기 에포크 급수렴 양상 학습 손실 곡선">
+                        <figcaption>초기 에포크 급수렴 양상 곡선</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h3>사용 기술</h3>
+            <div class="project-tech">
+                <span class="skill-badge">Python</span>
+                <span class="skill-badge">PyTorch</span>
+                <span class="skill-badge">OpenCV</span>
+                <span class="skill-badge">MediaPipe</span>
+                <span class="skill-badge">CNN
+                    · GRU</span>
             </div>
         </div>
 
